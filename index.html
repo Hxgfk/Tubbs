@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Tubbs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../lib/lodash.js"></script>
+</head>
+<body>
+<div id="c_search">
+    <p id="webtitle">Tubbs</p>
+    <p class="webtitle2">最齐全的电子管数据手册数据库</p>
+    <p class="webtitle2">支持按照参数搜索</p>
+    <div id="c_s_2">
+        <span>
+        <label id="search">
+            <input placeholder="输入型号或者参数表达式以搜索电子管..." type="text" id="inp_search" autocomplete="off" class="suggestion-focus">
+            <div id="suggestions-list"></div>
+        </label>
+        <button id="search_btn" onclick="gotoMainPage()">搜索</button>
+    </span>
+    </div>
+</div>
+<div id="c_text">
+    Created&nbsp;by
+    <a href="../text.html?text=5pyJ6Zeu6aKY6K+35Y+R6YCB6YKu5Lu25YiwYWRtaW5AaHhnZmsuY29t">Hxgfk</a>
+    @&nbsp;Copyright&nbsp;(c)&nbsp;
+    <a href="../licensepage/#?type=GPLv3">GNU General Public License v3.0</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/Hxgfk/Tubbs">开源</a>
+</div>
+<script src="index.js"></script>
+<script>
+    loadTubeData(null);
+    load2();
+    document.addEventListener("keypress", function (e) {
+        if (e.code === "Enter" || e.code === "NumpadEnter") {
+            gotoMainPage();
+        }
+    });
+</script>
+</body>
+</html>

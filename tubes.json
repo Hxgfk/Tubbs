@@ -1,0 +1,934 @@
+{
+  "tube_list": [
+    {
+      "name": "1Z1",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "用于110°电视接收机行扫描回程脉冲电压的整流（小功率整流）",
+      "args": {
+        "Uf": "1.4V",
+        "If": "550±55mA",
+        "Ua": "100V",
+        "Ia": ">=8mA",
+        "Cak": "1.55pF",
+        "Ufmax": "1.54V",
+        "Ufmin": "1.26V",
+        "Izlmax": "0.5mA",
+        "Iamax": "40mA",
+        "-Uamax": "22kV",
+        "Cmax": "2000pF"
+      },
+      "supplement": {
+        "Iamax": "qmax=10%, τmax=10uS时",
+        "-Uamax": "qmax=22%, τmax=18uS时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "1Z1B",
+      "maker": "国产",
+      "type": "直热式氧化物阴极高压整流二极管",
+      "use": "在电视接收机中作行扫描回程脉冲电压整流（小功率整流）",
+      "args": {
+        "Uf": "0.7V",
+        "If": "200mA",
+        "Ua_ac": "100V",
+        "Ia": ">=2mA",
+        "fl": ">=16kG",
+        "Ufmax": "0.77V",
+        "Ufmin": "0.63V",
+        "Iamax": "3mA",
+        "-Uamax": "8kV",
+        "Izlmax": "0.1ma",
+        "Pamax": "0.6W"
+      },
+      "translation": {
+        "Iamax": "最大阳极电压振幅"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "1Z7P",
+      "maker": "国产",
+      "type": "直热式氧化物阴极高压脉冲整流二极管",
+      "use": "在专用无线电设备中用作高频脉冲整流（小功率整流）",
+      "args": {
+        "Uf": "1.25V",
+        "If": "200±40mA",
+        "-Ua": ">=30kV",
+        "Ie": ">=4mA",
+        "Cak": "1.2±0.5pF",
+        "Ufmax": "1.4V",
+        "Ufmin": "1.1V",
+        "-Uamax": "30kV",
+        "Iammax": "17mA",
+        "Izlmax": "2mA",
+        "Fcmax": "300kHz",
+        "Tkmin": "30S"
+      },
+      "supplement": {
+        "-Ua": "Izl=2mA时",
+        "Ie": "Ua=100V时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "1Z11",
+      "maker": "国产",
+      "type": "直热式氧化物阴极二极管",
+      "use": "电视接收机中作行扫描回程脉冲电压整流（小功率整流）",
+      "args": {
+        "Uf": "1.2V",
+        "If": "200mA",
+        "Ua": "100V",
+        "Ia": ">=4mA",
+        "Cak": "1pF",
+        "Ufmax": "1.32V",
+        "Ufmin": "1.08V",
+        "-Uamax": "20kV",
+        "Izlmax": "300uA",
+        "Iamax": "2mA",
+        "flmin": "12kHz"
+      },
+      "supplement": {
+        "Ia": "τ<=12uS时",
+        "-Uamax": "τ<=12uS时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "2Z2P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极高压整流二极管",
+      "use": "高压整流",
+      "args": {
+        "Uf": "2.5V",
+        "If": "1.75±0.2A",
+        "Ie": "47.5±17.5mA",
+        "Izl": ">=6.8mA",
+        "Ut": "4.5kV",
+        "Rz": "0.6MR",
+        "C": "0.06uF",
+        "Ufmax": "2.75V",
+        "Ufmin": "2.25V",
+        "-Uamax": "12.5kV",
+        "Ua_acmax": "4.5kV",
+        "Izlmax": "7.5mA",
+        "Iamax": "100mA"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "2Z2PT",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极高压整流二极管",
+      "use": "高压整流",
+      "args": {
+        "Uf": "2.5V",
+        "If": "1.75±0.2A",
+        "Ie": "47.5±17.5mA",
+        "Izl": ">=6.8mA",
+        "Ut": "4.5kV",
+        "Rz": "0.6MR",
+        "C": "0.06uF",
+        "Ufmax": "2.75V",
+        "Ufmin": "2.25V",
+        "-Uamax": "12.5kV",
+        "Ua_acmax": "4.5kV",
+        "Izlmax": "7.5mA",
+        "Iamax": "100mA"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "5Z1P",
+      "maker": "国产",
+      "type": "直热式氧化物阴极双阳级整流二极管",
+      "use": "小功率全波整流",
+      "args": {
+        "Uf": "5V",
+        "If": "2±0.4A",
+        "Ie": ">=120mA",
+        "Izl": "125mA",
+        "Rz": "0.6MR",
+        "C": "4uF",
+        "L": "10H",
+        "Zt": "50R",
+        "ra": ">=20MR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.4kV",
+        "Izlmax": "125mA",
+        "Iamax": "375mA",
+        "iamax": "2250mA",
+        "special_val": {
+          "Ut1": "2x500V",
+          "Ut2": "2x350V"
+        }
+      },
+      "supplement": {
+        "Ut1": "滤波电路为电感输入时",
+        "Ut2": "滤波电路为电容输入时",
+        "Ie": "Ua=75V时"
+      },
+      "translation": {
+        "Ut1": "变压器次级交流电压有效值",
+        "Ut2": "变压器次级交流电压有效值",
+        "L": "滤波电感"
+      }
+    },
+    {
+      "name": "5Z2P",
+      "maker": "国产",
+      "type": "直热式氧化物阴极双阳级整流二极管",
+      "use": "小功率全波整流",
+      "args": {
+        "Uf": "5V",
+        "If": "2±0.2A",
+        "Ie": ">=120mA",
+        "Izl": "125mA",
+        "Rz": "2.75KR",
+        "C": "4uF",
+        "ra": ">=20MR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.4kV",
+        "Izlmax": "125mA",
+        "Iamax": "375mA"
+      },
+      "supplement": {
+        "Ie": "Ua=75V时",
+        "ra": "Ua=-400V时"
+      }
+    },
+    {
+      "name": "5Z3P",
+      "maker": "国产",
+      "type": "直热式氧化物阴极双阳级整流二极管",
+      "use": "小功率全波整流",
+      "args": {
+        "Uf": "5V",
+        "If": "3±0.3A",
+        "Ie": ">=225mA",
+        "Izl": ">=230mA",
+        "Zt": "75R",
+        "C": "4uF",
+        "Ut": "2x500V",
+        "ra": ">=20MR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.55kV",
+        "Izlmax": "250mA",
+        "Iamax": "750mA"
+      },
+      "supplement": {
+        "Izl": "Ra=2KR时",
+        "Ie": "Ua=75V时",
+        "ra": "Ua=-400V时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "5Z3PA",
+      "maker": "国产",
+      "type": "直热式氧化物阴极双阳级整流二极管",
+      "use": "在专用设备中整流用",
+      "args": {
+        "Uf": "5V",
+        "If": "3±0.3A",
+        "Izl": ">=230mA",
+        "C": "4uF",
+        "Ut": "2x500V",
+        "Ia1": ">=225mA",
+        "Ia2": ">=225mA",
+        "ra1": ">=20MR",
+        "ra2": ">=20MR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.7kV",
+        "Izlmax": "250mA",
+        "Iamax": "1750mA"
+      },
+      "supplement": {
+        "Izl": "Ra=2KR时",
+        "Ia1": "Ua1=75V, Ua2=0V时",
+        "Ia2": "Ua2=75V, Ua1=0V时",
+        "ra1": "Ua1=-500V, Uf=0V时",
+        "ra2": "Ua2=-500V, Uf=0V时"
+      },
+      "translation": {
+        "Ua1": "第一阳极电压",
+        "Ua2": "第二阳极电压",
+        "Ia1": "第一阳极电流",
+        "Ia2": "第二阳极电流",
+        "ra1": "第一阳极绝缘电阻",
+        "ra2": "第二阳极绝缘电阻"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "5Z4P",
+      "maker": "国产",
+      "type": "直热式氧化物阴极双阳级整流二极管",
+      "use": "小功率全波整流",
+      "args": {
+        "Uf": "5V",
+        "If": "1.8~2.2A",
+        "Ie": ">=300mA",
+        "Izl": ">=112mA",
+        "Rz": "4.7KR",
+        "C": "4uF",
+        "Ut": "2x500V",
+        "rak": ">=20MR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.35kV",
+        "Izlmax": "125mA",
+        "Iamax": "375mA",
+        "Iamax_all": "62mA",
+        "iamax": "1250mA"
+      },
+      "supplement": {
+        "Ie": "Ua=50V时",
+        "rak": "Ua=-500V, Uf=0V时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "5Z4PA",
+      "maker": "国产",
+      "type": "直热式氧化物阴极双阳级整流二极管",
+      "use": "在专用设备中整流用",
+      "args": {
+        "Uf": "5V",
+        "If": "2±0.2A",
+        "Izl": ">=133mA",
+        "C": "4uF",
+        "Ut": "2x400V",
+        "Rz": "3.3KR",
+        "Ie": ">=300mA",
+        "rak": ">=20MR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.55kV",
+        "Izlmax": "140mA",
+        "Iamax": "415mA",
+        "iamax": "1400mA"
+      },
+      "supplement": {
+        "Ie": "Ua=50V时",
+        "Izl": "Zt=50±10R时",
+        "rak": "Ua=-500V, Uf=0V时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "5Z8P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双阳级整流二极管",
+      "use": "全波整流",
+      "args": {
+        "Uf": "5V",
+        "If": "5±0.75A",
+        "Izl": ">=400mA",
+        "C": "4uF",
+        "Ut": "2x500V",
+        "Ue": "<=75V",
+        "Rz": "1KR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.7kV",
+        "Izlmax": "420mA",
+        "Iamax": "1.2A",
+        "iamax": "5A",
+        "Pamax": "30W",
+        "Tbmax": "200℃"
+      },
+      "supplement": {
+        "Ue": "Ia=300mA时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "5Z9P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双阳级整流二极管",
+      "use": "全波整流",
+      "args": {
+        "Uf": "5V",
+        "If": "3±0.3A",
+        "Izl": ">=190mA",
+        "C": "4uF",
+        "Ut": "2x500V",
+        "Ue": "<=75V",
+        "Rz": "2.2KR",
+        "Ufmax": "5.5V",
+        "Ufmin": "4.5V",
+        "-Uamax": "1.7kV",
+        "Izlmax": "205mA",
+        "Iamax": "600mA",
+        "iamax": "3A",
+        "Pamax": "12W",
+        "Tbmax": "200℃"
+      },
+      "supplement": {
+        "Ue": "Ia=180mA时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6Z4",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双阳级整流二极管（共阴极）",
+      "use": "全波整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "600mA",
+        "Izl": ">=72mA",
+        "C": "16uF",
+        "Ut": "2x350V",
+        "Rz": "5.2KR",
+        "Ufmax": "7V",
+        "Ufmin": "5.7V",
+        "-Uamax": "1kV",
+        "Izlmax": "75mA",
+        "Iamax": "300mA",
+        "Ufkmax": "+100V, -400V"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6Z4Q",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双阳级整流二极管（共阴极）",
+      "use": "全波整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "600mA",
+        "Izl": ">=72mA",
+        "C": "8uF",
+        "Ut": "2x350V",
+        "Rz": "5.2KR",
+        "Ufmax": "7V",
+        "Ufmin": "5.7V",
+        "-Uamax": "1kV",
+        "Izlmax": "75mA",
+        "Iamax": "300mA",
+        "Ufkmax": "+200V, -400V",
+        "Tbmax": "170℃"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6Z4T",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双阳级整流二极管（共阴极）",
+      "use": "全波整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "600mA",
+        "Izl": ">=70mA",
+        "C": "16uF",
+        "Ut": "2x350V",
+        "Rz": "5.2KR",
+        "Ufmax": "7V",
+        "Ufmin": "5.7V",
+        "-Uamax": "1kV",
+        "Izlmax": "75mA",
+        "Iamax": "300mA",
+        "Ufkmax": "+100V, -400V",
+        "Pamax": "3W"
+      }
+    },
+    {
+      "name": "6Z5P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双阳级整流二极管（共阴极）",
+      "use": "小功率全波整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "600±60mA",
+        "Izl": ">=70mA",
+        "C": "8uF",
+        "Ut": "2x400V",
+        "Rz": "5.7KR",
+        "Ie": ">=140mA",
+        "Ifk": "<=150uA",
+        "ra": ">=10MR",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "-Uamax": "1.1kV",
+        "Izlmax": "70mA",
+        "Ufkmax": "±450V"
+      },
+      "supplement": {
+        "Ie": "Ua=50V时",
+        "Izl": "变压器次级线圈阻抗为75~225R时",
+        "Ifk": "Ufk=-450V时",
+        "ra": "Ua=-500V时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6Z18",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "在电视机行扫描输出电路作阻尼用",
+      "args": {
+        "Uf": "6.3V",
+        "If": "1.55±0.15mA",
+        "Izl": ">=120mA",
+        "Ua": "20V",
+        "Ia": ">=200mA",
+        "-Uam": "6kV",
+        "Ufk": "-750V",
+        "Ufkm": "6.6kV",
+        "Cfk": "2.0pF",
+        "Cak": "8.6pF",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "Uamax": "250V",
+        "-Uammax": "6kV",
+        "Izlmax": "220mA",
+        "Ufkmax": "-750V",
+        "Iammax": "550mA",
+        "Ufkmmax": "6.6kV",
+        "Pamax": "5W"
+      },
+      "supplement": {
+        "-Uam": "qmax=22%, τmax=18uS时",
+        "-Uammax": "qmax=22%, τmax=18uS时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6Z19",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "在电视机行扫描输出电路作阻尼用",
+      "args": {
+        "Uf": "6.3V",
+        "If": "1.05A",
+        "Ua": "20V",
+        "Ia": ">=150mA",
+        "Ri": "100R",
+        "Cfk": "5pF",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "Izlmax": "120mA",
+        "Ufkmax": "750V",
+        "Iamax": "450mA",
+        "Ufkmmax": "4.5kV",
+        "flmin": "12kHz"
+      },
+      "supplement": {
+        "Ia": "τmax<=12uS时",
+        "Uammax": "τmax=12uS时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "2D1P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "在分米波波段作检波用",
+      "args": {
+        "Uf": "6.3V",
+        "If": "400±50mA",
+        "Ua": "5V",
+        "Ia": ">=1.6mA",
+        "Iat": "<=5uA",
+        "Ifk": "<=25uA",
+        "Cak": "0.1~0.4pF",
+        "Ufmax": "2.4V",
+        "Ufmin": "2.2V",
+        "-Uamax": "100V",
+        "Izlmax": "0.1mA",
+        "Ufkmax": "±25V",
+        "Pamax": "0.01W",
+        "λmin": "10cm"
+      },
+      "supplement": {
+        "Iat": "Ua=100V, Ra=100KR时",
+        "Ifk": "Ufk=25V, Rfk<=50KR时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6D3D",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "在分米波和厘米波的上限部分作检波用",
+      "args": {
+        "Uf": "6.3V",
+        "If": "0.7±0.07A",
+        "Ua": "<=7V",
+        "Ifk": "<=54uA",
+        "Rah": ">=25MR",
+        "Cak": "<=2.8pF",
+        "Cah": "25~50pF",
+        "Ufmax": "6.6V",
+        "Ufmin": "6V",
+        "-Uamax": "200V",
+        "Iamax": "27mA",
+        "Iammax": "150mA",
+        "Ufkmax": "±90V",
+        "Tamax": "150℃"
+      },
+      "supplement": {
+        "Ua": "Ia=27mA时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6D4J",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "高频检波",
+      "args": {
+        "Uf": "6.3V",
+        "If": "150mA",
+        "Ua_ac": "125V",
+        "Izl": ">=4.8mA",
+        "Iao": "<=70uA",
+        "Rz": "28KR",
+        "C": "2uF",
+        "Cak": "1.91pF",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "Uamax_ac": "130V",
+        "-Uamax": "365V",
+        "Iamax1": "5mA",
+        "Iamax2": "30mA"
+      },
+      "translation": {
+        "Iamax1": "最大阳极电流",
+        "Iamax2": "最大阳极电流峰值"
+      },
+      "supplement": {
+        "Iao": "Uf=6.3V, Ra=20KR时"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6D6A",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极高频二极管",
+      "use": "检波或整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "150mA",
+        "Ua_ac": "165V",
+        "Izl": ">=8mA",
+        "Rz": "22KR",
+        "C": "8uF",
+        "Cak": "3pF",
+        "Cfk": "3.5pF",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "-Uamax": "450V",
+        "Ufkmax": "±165V",
+        "Izlmax": "10mA",
+        "Pamax": "0.2W",
+        "Fmax": "687MHz"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6D6AQ",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极高频二极管",
+      "use": "检波或整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "150mA",
+        "Ua_ac": "165V",
+        "Izl": ">=8mA",
+        "Rz": "22KR",
+        "C": "8uF",
+        "Cak": "3pF",
+        "Cfk": "3.5pF",
+        "Ufmax": "6.6V",
+        "Ufmin": "6V",
+        "-Uamax": "450V",
+        "Ufkmax": "±165V",
+        "Izlmax": "10mA",
+        "Pamax": "0.2W",
+        "Fmax": "700MHz",
+        "Tbmax": "170℃"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6D8D",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极二极管",
+      "use": "检波或整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "450±50mA",
+        "Ia": ">=1.6mA",
+        "Izl": ">=150uA",
+        "Ua_ac": "150V",
+        "Ua": "<=450V",
+        "Iak": "<=0.05uA",
+        "S": ">=1.8uA/V",
+        "Cak": "<=0.5pF",
+        "Ufmax": "7.0V",
+        "Ufmin": "5.7V",
+        "Uamax": "450V",
+        "Uamax_ac": "150V",
+        "Izlmax": "180uA",
+        "Pamax": "0.06W",
+        "Ttmax": "150℃"
+      },
+      "translation": {
+        "Uamax_ac": "最大阳极交流电压有效值",
+        "Ttmax": "最高电极出头温度"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6H2",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双二极管",
+      "use": "检波及小功率整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "300mA",
+        "Ia": ">=1.6mA",
+        "Ut": "150V",
+        "Rz": "10KR",
+        "Izl": ">=17uA",
+        "C": "8uF",
+        "Cfk": "<=4pF",
+        "Ca1a2": "<=0.03pF",
+        "Cakfss2": "3.4pF",
+        "Ckafss2": "3.8pF",
+        "Ufmax": "7.0V",
+        "Ufmin": "5.7V",
+        "-Uamax": "450V",
+        "Ufkmax": "±350V",
+        "Izlmax": "20mA",
+        "Iamax": "90mA"
+      },
+      "translation": {
+        "Cakfss2": "阳极与（阴极+灯丝+内隔离+外隔离）间电容",
+        "Ckafss2": "阴极与（阳极+灯丝+内隔离+外隔离）间电容"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6H2Q",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双二极管",
+      "use": "检波及小功率整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "300mA",
+        "Ut": "150V",
+        "Rz": "10KR",
+        "Izl": ">=17mA",
+        "C": "8uF",
+        "Cfk": "<=4pF",
+        "Ca1a2": "<=0.03pF",
+        "Cakfss2": "3.4pF",
+        "Ckafss2": "3.8pF",
+        "Ufmax": "7.0V",
+        "Ufmin": "5.7V",
+        "-Uamax": "450V",
+        "Ufkmax": "+200, -350V",
+        "Izlmax": "20mA",
+        "Iamax": "90mA",
+        "Tbmax": "120℃"
+      },
+      "translation": {
+        "Cakfss2": "阳极与（阴极+灯丝+内隔离+外隔离）间电容",
+        "Ckafss2": "阴极与（阳极+灯丝+内隔离+外隔离）间电容"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6H2T",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双二极管",
+      "use": "检波及小功率整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "300mA",
+        "Ut": "150V",
+        "Rz": "10KR",
+        "Izl": ">=17mA",
+        "C": "8uF",
+        "Cfk": "<=4pF",
+        "Ca1a2": "<=0.03pF",
+        "Cakfss2": "3.4pF",
+        "Ckafss2": "3.8pF",
+        "Ufmax": "7.0V",
+        "Ufmin": "5.7V",
+        "-Uamax": "450V",
+        "Ufkmax": "+200, -350V",
+        "Izlmax": "20mA",
+        "Iamax": "90mA",
+        "Tbmax": "120℃"
+      },
+      "translation": {
+        "Cakfss2": "阳极与（阴极+灯丝+内隔离+外隔离）间电容",
+        "Ckafss2": "阴极与（阳极+灯丝+内隔离+外隔离）间电容"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6H6P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双二极管",
+      "use": "检波",
+      "args": {
+        "Uf": "6.3V",
+        "If": "300±25mA",
+        "Ut": "150V",
+        "Ua_ac": "165V",
+        "Izl": ">=16mA",
+        "Ie": ">=15mA",
+        "Ifk": "<=5uA",
+        "ra": ">=20MR",
+        "Cak1": "3.25±1.25pF",
+        "Cak2": "4±1pF",
+        "Ca1a2": "<=0.1pF",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "-Uamax": "465V",
+        "Uamax_ac": "165V",
+        "Iamax1": "8.8mA",
+        "Iamax2": "50mA",
+        "iamax": "176mA"
+      },
+      "supplement": {
+        "Izl": "C=8uF, Ra=11KR时",
+        "Ie": "Ua=20V时",
+        "Ifk": "Ufk=±10V时",
+        "ra": "被测二极管阳极电压为-300V，未测二极管阳极电压为0V时"
+      },
+      "translation": {
+        "Iamax1": "最大阳极平均电流",
+        "Iamax2": "最大阳极电流峰值",
+        "Cak1": "第一阳极与阴极间电容",
+        "Cak2": "第二阳极与阴极间电容",
+        "Uamax_ac": "阳极交流电压有效值"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "6H7BQ",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双二极管",
+      "use": "高频电压检波及小功率整流",
+      "args": {
+        "Uf": "6.3V",
+        "If": "300mA",
+        "Ua_ac": "165V",
+        "Izl": ">=8mA",
+        "Rz": ">=22KR",
+        "C": "8uF",
+        "Iao": "<=20uA",
+        "Cak": "5.8pF",
+        "Cfk": "<=5pF",
+        "Ca1a2": "<=0.3pF",
+        "Ufmax": "6.9V",
+        "Ufmin": "5.7V",
+        "-Uamax": "450V",
+        "Ufkmax": "±200V",
+        "Izlmax": "10mA",
+        "Izlmmax": "70mA",
+        "Pamax": "0.2W",
+        "amax": "100g",
+        "a1max": "500g",
+        "Tbmax": "170℃"
+      },
+      "supplement": {
+        "Iao": "Uf=6.3V, Ua=0V, Ra=40KR时"
+      },
+      "translation": {
+        "Izlmmax": "最大整流脉冲电流峰值",
+        "a1max": "最大单次冲击加速度"
+      },
+      "imgs": [
+      ]
+    },
+    {
+      "name": "12H3P",
+      "maker": "国产",
+      "type": "旁热式氧化物阴极双二极管",
+      "use": "超高频检波及变频",
+      "args": {
+        "Uf": "12.6V",
+        "If": "73±5mA",
+        "Ua": "10V",
+        "Ia": "10.25±4.25uA",
+        "S": ">=0.5mA/V",
+        "Ifk": "<=20uA",
+        "Iak": "<=10uA",
+        "Ia1a2": "<=10uA",
+        "dIa": "<=30%",
+        "dS": "<=30%",
+        "dUj": "<=30%",
+        "Cak": "0.48±0.1pF",
+        "Ca1a2": "0.12±0.05pF",
+        "dC": "<=30%",
+        "Ufmax": "14.5V",
+        "Ufmin": "10.8V",
+        "Ufkmax": "±100V",
+        "Pamax": "0.1W",
+        "λmin": "17cm",
+        "Iamax1": "20mA",
+        "Iamax2": "2mA",
+        "Uamax1": "100V",
+        "Uamax2": "250V"
+      },
+      "supplement": {
+        "S": "dU=0.2V时",
+        "Ifk": "Uf=14.5V, Ufk=±100V时",
+        "Iak": "Uf=14.5V, Ua=-100V, Ua1a2=-100V时",
+        "Ia1a2": "当Uf=14.5V时"
+      },
+      "translation": {
+        "Iamax1": "最大阳极电流峰值",
+        "Iamax2": "最大阳极电流平均值",
+        "Uamax1": "最大阳极电压峰值（工作时）",
+        "Uamax2": "最大阳极电压峰值（空载时）",
+        "dUj": "两管截止电压差",
+        "dS": "两管跨导差",
+        "dC": "两管电容差"
+      },
+      "imgs": [
+      ]
+    }
+  ]
+}

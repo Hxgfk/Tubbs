@@ -142,7 +142,7 @@ function setPage(tube) {
                 dw_btn_icon_div.classList.add("tube-img-dw-icon-c");
                 const icon_img = document.createElement("img");
                 icon_img.classList.add("tube-img-download-icon");
-                icon_img.src = "icon_download.png";
+                icon_img.src = "./icon/icon_download.png";
                 dw_btn_icon_div.appendChild(icon_img);
                 dw_img_btn.appendChild(dw_btn_icon_div);
                 img_text_cont.appendChild(dw_img_btn);

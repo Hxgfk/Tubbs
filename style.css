@@ -2,6 +2,10 @@ html {
     --search-suggestion-border-color: #8F8F8F;
 }
 
+body {
+    background: white;
+}
+
 #webtitle, .webtitle2 {
     text-align: center;
     margin: 0;
@@ -61,21 +65,6 @@ html {
     outline: 0;
     font-size: 20px;
     display: inline-block;
-}
-
-#c_text {
-    background: rgba(193, 193, 193, 0.7);
-    font-size: 15px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    height: 20px;
-    width: 100%;
-}
-
-#c_text > a {
-    color: #0077d4;
 }
 
 #suggestions-list {

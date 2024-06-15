@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Tubbs</title>
-    <link rel="stylesheet" type="text/css" href="sharedstyle.css">
-    <link rel="stylesheet" type="text/css" href="mainpage_style.css">
-    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="res/css/sharedstyle.css">
+    <link rel="stylesheet" type="text/css" href="res/css/mainpage_style.css">
+    <link rel="icon" type="image/x-icon" href="./res/icon/favicon.ico">
     <script src="./libs/lodash.js"></script>
-    <script src="index.js"></script>
+    <script src="./res/js/index.js"></script>
 </head>
 <body>
 <div id="main_container">
@@ -23,12 +23,21 @@
     </div>
     <div class="content-block" id="tube_container">
         <div id="tube-deatil">
-            <p id="tube-name"></p><br>
-            <p id="tube-maker">李俊</p>
-            <p id="tube-use">看看</p>
+            <div style="display: flex; align-items: center">
+                <p id="tube-name"></p>
+                <div id="tube-img-pindefine-div">
+                    <div id="tube-img-pindefine-div2">
+                        <p id="tube-noimg-pindefine-text">暂无引脚图</p>
+                        <img id="tube-img-pindefine" src="res/icon/a.png" alt="管脚图">
+                    </div>
+                </div>
+            </div>
+            <p id="tube-maker"></p>
+            <p id="tube-use"></p>
             <div id="tube-inf-selectbar">
                 <button onclick="btnToArgsDiv()">参数</button>
                 <button onclick="btnToImgsDiv()">曲线图</button>
+                <button onclick="btnToPdfDiv()">PDF数据手册</button>
             </div>
             <div id="tube-args" style="display: block">
                 <p id="arg-text">电气参数：</p>
@@ -40,7 +49,10 @@
                     </div>
                 </div>
             </div>
-            <div id="tube-imgs" style="display: none">
+            <div id="tube-imgs" style="display: none"></div>
+            <div id="tube-pdf" style="display: none;">
+                <p id="tube-pdf-nofile">暂无PDF数据手册</p>
+                <div id="pdfreader"></div>
             </div>
         </div>
         <div id="tube-noselect">
@@ -58,7 +70,7 @@
     &nbsp;
     <a href="./submitTube.html">上传电子管数据</a>
 </div>
-<script src="main_page.js"></script>
+<script src="./res/js/main_page.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let url_params = location.search;

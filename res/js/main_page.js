@@ -2,6 +2,8 @@ const search_result_div = document.getElementById('search_result');
 const search_value_inp = document.getElementById('search_inp');
 const deatil_tube = document.getElementById('tube-deatil');
 const noselect_tube = document.getElementById('tube-noselect');
+const tube_img_pindefine = document.getElementById('tube-img-pindefine');
+const tube_noimg_pindefine_text = document.getElementById('tube-noimg-pindefine-text');
 const deatil_tube_name = document.getElementById('tube-name');
 const deatil_tube_maker = document.getElementById('tube-maker');
 const deatil_tube_use = document.getElementById('tube-use');
@@ -9,6 +11,8 @@ const deatil_tube_args = document.getElementById('args');
 const deatil_tube_supplements = document.getElementById('supplement_forjs');
 const deatil_tube_supplement_text = document.getElementById('supplement-text');
 const deatil_tube_imgs = document.getElementById('tube-imgs');
+const pdf_tube_nofile_text = document.getElementById('tube-pdf-nofile');
+const tube_pdfreader = document.getElementById("pdfreader");
 let symbols_trans = null;
 let now_select_tube = {};
 let tube_elm = null;
@@ -28,12 +32,17 @@ function loadSymbolList() {
 }
 
 function clearDeatil() {
+    tube_img_pindefine.src = '';
+    tube_img_pindefine.style.display = 'none';
+    tube_noimg_pindefine_text.style.display = 'block';
     deatil_tube_name.innerHTML = '';
     deatil_tube_maker.innerHTML = '';
     deatil_tube_use.innerHTML = '';
     deatil_tube_args.innerHTML = '';
     deatil_tube_supplements.innerHTML = '';
     deatil_tube_imgs.innerHTML = '';
+    pdf_tube_nofile_text.style.display = "block";
+    tube_pdfreader.style.display = 'none';
 }
 
 const ArgTransformer = {
@@ -100,6 +109,11 @@ function setPage(tube) {
     }
     clearDeatil();
     deatil_tube_name.innerHTML = tube.name;
+    if (tube.hasOwnProperty("pindefine")) {
+        tube_noimg_pindefine_text.style.display = 'none';
+        tube_img_pindefine.src = tube.pindefine;
+        tube_img_pindefine.style.display = 'block';
+    }
     deatil_tube_maker.innerHTML = "品牌：" + tube.maker;
     deatil_tube_use.innerHTML = "主要作用：" + tube.use;
     const keys = Object.keys(tube.args);
@@ -142,7 +156,7 @@ function setPage(tube) {
                 dw_btn_icon_div.classList.add("tube-img-dw-icon-c");
                 const icon_img = document.createElement("img");
                 icon_img.classList.add("tube-img-download-icon");
-                icon_img.src = "./icon/icon_download.png";
+                icon_img.src = "./res/icon/icon_download.png";
                 dw_btn_icon_div.appendChild(icon_img);
                 dw_img_btn.appendChild(dw_btn_icon_div);
                 img_text_cont.appendChild(dw_img_btn);
@@ -155,6 +169,9 @@ function setPage(tube) {
             noimg_p.innerHTML = "暂无曲线图资料";
             deatil_tube_imgs.appendChild(noimg_p);
         }
+    }
+    if (tube.hasOwnProperty("pdfdatasheet")) {
+        //
     }
 }
 
@@ -203,13 +220,22 @@ function searchTubeToPage() {
 
 const tube_arg_div = document.getElementById('tube-args');
 const tube_img_div = document.getElementById('tube-imgs');
+const tube_pdf_div = document.getElementById("tube-pdf");
 
 function btnToArgsDiv() {
     tube_img_div.style.display = "none";
+    tube_pdf_div.style.display = "none";
     tube_arg_div.style.display = "block";
 }
 
 function btnToImgsDiv() {
     tube_arg_div.style.display = "none";
+    tube_pdf_div.style.display = "none";
     tube_img_div.style.display = "block";
+}
+
+function btnToPdfDiv() {
+    tube_arg_div.style.display = "none";
+    tube_img_div.style.display = "none";
+    tube_pdf_div.style.display = "block";
 }

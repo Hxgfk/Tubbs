@@ -115,6 +115,7 @@ body {
 #tube-name {
     font-size: 45px;
     font-weight: bold;
+    display: inline-block;
 }
 
 #tube-maker, #tube-use {
@@ -122,7 +123,7 @@ body {
 }
 
 #tube-inf-selectbar {
-    width: 180px;
+    width: auto;
     height: 30px;
     background: #55aaff;
     margin-top: 15px;
@@ -132,7 +133,7 @@ body {
 
 #tube-inf-selectbar > button {
     border: none;
-    width: 80px;
+    width: auto;
     height: 100%;
     margin-left: 10px;
     position: relative;
@@ -144,6 +145,31 @@ body {
 
 #tube-inf-selectbar > button:active {
     background: #2694fb;
+}
+
+#tube-img-pindefine-div, #tube-img-pindefine-div2, #tube-img-pindefine {
+    width: 120px;
+    height: 120px;
+}
+
+#tube-img-pindefine-div {
+    border: 1px dashed #BBBBBB;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#tube-img-pindefine-div2 {
+    position: relative;
+}
+
+#tube-noimg-pindefine-text {
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+#tube-img-pindefine {
+    display: none;
 }
 
 #tube-args, #tube-imgs {

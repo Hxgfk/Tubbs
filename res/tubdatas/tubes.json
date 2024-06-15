@@ -72,6 +72,9 @@
         "-Ua": "Izl=2mA时",
         "Ie": "Ua=100V时"
       },
+      "translation": {
+        "Fcmax": "最大脉冲重复频率"
+      },
       "imgs": [
       ]
     },

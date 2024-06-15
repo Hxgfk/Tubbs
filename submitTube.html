@@ -3,11 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <title>Tubbs</title>
+    <link rel="stylesheet" type="text/css" href="./res/css/sharedstyle.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/page_submit_tube.css">
 </head>
 <body>
 <h1>上传电子管</h1>
-<div>
-    <span>*</span>
+<div id="main-cont">
+    <div class="tube-arg">
+        <div class="tube-arg-cont">
+            <span class="must-sym">*</span>
+            <span class="name-text">型号：</span>
+            <label>
+                <input type="text" id="tube-name">
+            </label>
+        </div>
+    </div>
+    <div class="tube-arg">
+        <div class="tube-arg-cont">
+            <span class="must-sym">*</span>
+            <span class="name-text">引脚图：</span>
+            <label>
+                <input type="file" id="tube-pindefine">
+            </label>
+            <span class="type-suggestion"></span>
+        </div>
+    </div>
+    <div class="tube-arg">
+        <div class="tube-arg-cont">
+            <span class="must-sym">*</span>
+            <span class="name-text">品牌或者生产厂家：</span>
+            <label>
+                <input type="text" id="tube-maker">
+            </label>
+            <span class="type-suggestion"></span>
+        </div>
+    </div>
+    <div class="tube-arg">
+        <div class="tube-arg-cont">
+            <span class="must-sym">*</span>
+            <span class="name-text">主要用途：</span>
+            <label>
+                <input type="text" id="tube-use">
+            </label>
+        </div>
+    </div>
+    <div class="tube-arg" id="electron-arg-cont">
+        <div class="tube-arg-cont" style="float: left;">
+            <span class="must-sym">*</span>
+            <span class="name-text">电气参数：</span>
+        </div>
+        <div class="buttonbar">
+            <button class="btn-add">添加</button>
+            <button class="btn-removeall">清空</button>
+        </div>
+        <div id="electron-arg-list-cont">
+            <div class="list-desc electron-arg-list-block">
+                <span class="list-element">符号</span>
+                <span class="list-element">名称</span>
+                <span class="list-element">参数值</span>
+                <span class="list-element"></span>
+            </div>
+            <div class="electron-arg-list-forjs">
+                <div class="electron-arg-list-block">
+                    <span class="list-element">Uf</span>
+                    <span class="list-element">灯丝电压</span>
+                    <span class="list-element">1kV</span>
+                    <span class="list-element">
+                        <div></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tube-arg" id="imgs-cont">
+        <div class="tube-arg-cont" style="float: left;">
+            <span class="name-text">曲线图：</span>
+        </div>
+        <div class="buttonbar">
+            <button class="btn-add">添加</button>
+            <button class="btn-removeall">清空</button>
+        </div>
+        <div id="img-list-cont">
+        </div>
+    </div>
+    <div class="tube-arg">
+        <div class="tube-arg-cont">
+            <span class="name-text">PDF数据手册：</span>
+            <label>
+                <input type="file" id="tube-pdf">
+            </label>
+        </div>
+    </div>
+    <div class="tube-arg" id="all-added-tube-cont">
+        <div class="tube-arg-cont" style="float: left;">
+            <span class="name-text">已添加的电子管：</span>
+        </div>
+        <div class="buttonbar">
+            <button class="btn-add">添加</button>
+            <button class="btn-removeall">清空</button>
+        </div>
+        <div id="all-added-tube-list-cont">
+        </div>
+    </div>
+    <div class="tube-arg" id="success-edit-cont">
+        <div class="tube-arg-cont">
+            <span class="success-text">添加电子管完成请点击下面按钮然后把得到的文件发送到邮箱</span>
+            <span class="success-text"><a href="mailto:admin@hxgfk.com">admin@hxgfk.com</a></span>
+        </div>
+        <button id="btn-genfile">生成文件</button>
+        <span id="file_gen_status">请稍等...</span>
+    </div>
+    <p></p>
+</div>
+<div id="bottom-information">
+    Created&nbsp;by
+    <a href="../text.html?text=5pyJ6Zeu6aKY6K+35Y+R6YCB6YKu5Lu25YiwYWRtaW5AaHhnZmsuY29t">Hxgfk</a>
+    @&nbsp;Copyright&nbsp;(c)&nbsp;
+    <a href="../licensepage/#?type=GPLv3">GNU General Public License v3.0</a>
+    &nbsp;
+    <a href="https://github.com/Hxgfk/Tubbs">开源</a>
+    &nbsp;
+    <a href="./credits.html">使用的开源项目</a>
 </div>
 </body>
 </html>

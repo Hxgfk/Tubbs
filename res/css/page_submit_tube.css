@@ -1,0 +1,135 @@
+#main-cont {
+    display: table;
+    clear: both;
+}
+
+.tube-arg, .tube-arg-cont {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.tube-arg {
+    text-align: left;
+}
+
+#tube-pindefine, #tube-pdf {
+    border: none;
+    border-radius: 5px;
+    background: #f6f6f6;
+}
+
+.tube-arg-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tube-arg-cont *{
+    display: inline-block;
+}
+
+.must-sym {
+    color: #ff5a5a;
+    font-size: 20px;
+}
+
+.name-text {
+    font-size: 20px;
+}
+
+.type-suggestion {
+    display: block;
+}
+
+.list-desc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list-element {
+    vertical-align: text-top;
+    text-align: center;
+    width: 20%;
+}
+
+#electron-arg-list-cont {
+    align-items: start;
+}
+
+.electron-arg-list-block {
+    border-top: #8F8F8F solid 1px;
+    width: 100%;
+    height: 45px;
+    background: rgba(236, 236, 236, 0.47);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#electron-arg-cont, #imgs-cont, #all-added-tube-cont, #success-edit-cont {
+    display: table;
+    clear: both;
+}
+
+.buttonbar {
+    margin-top: 10px;
+}
+
+.buttonbar button {
+    display: inline-block;
+}
+
+.btn-add, .btn-removeall, #btn-genfile {
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-add {
+    background: #2694fb;
+}
+
+.btn-removeall {
+    background: #ff4747;
+}
+
+#electron-arg-list-cont, #img-list-cont, #all-added-tube-list-cont {
+    margin-top: 10px;
+    width: 480px;
+    height: 450px;
+    border: #BBBBBB solid 1px;
+    border-radius: 3px;
+    overflow-y: auto;
+}
+
+#img-list-cont {
+    height: 300px;
+}
+
+#all-added-tube-list-cont {
+    height: 400px;
+}
+
+#success-edit-cont {
+    margin-top: 10px;
+}
+
+.success-text {
+    display: inline-block;
+}
+
+#btn-genfile {
+    background: cornflowerblue;
+    width: auto;
+}
+
+#file_gen_status {
+    display: inline-block;
+    margin-left: 10px;
+}
